@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Management System</title>
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<div class="container">
+<h1>👥 User Management System</h1>
+<div class="stats">
+Total Users: <span id="userCount">0</span>
+</div>
+<div class="controls">
+<input
+type="text"
+id="userInput"
+placeholder="Enter user name">
+<input
+type="text"
+id="searchInput"
+placeholder="Search users..."
+onkeyup="searchUsers()">
+<button
+class="add-btn"
+onclick="addUser()">
+➕ Add User
+</button>
+
+</div>
+
+<div class="user-grid" id="userGrid"></div>
+
+</div>
+
